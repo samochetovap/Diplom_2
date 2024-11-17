@@ -34,7 +34,7 @@ public class LoginUserTest {
     }
 
     @Test
-    @Step("Тест на логин под существующим пользователем")
+    @Step("Тест на логин под не существующим пользователем")
     public void loginWithRandomLoginAndPasswordUser() {
         user.setPassword(UUID.randomUUID().toString());
         user.setEmail(UUID.randomUUID().toString());
